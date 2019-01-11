@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="shortcut icon" href="images/favicon.png" ></link>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/bootstrap.css" rel="stylesheet" >
+	<link href="css/Default.css" rel="stylesheet" >	
+	<script type="text/javascript"  src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			var x=(($(window).width())-1024)/2;
+			$('.wrap').css("left",x+"px");
+		});
+		$(window).resize(function(){
+			var x=(($(window).width())-1024)/2;
+			$('.wrap').css("left",x+"px");
+		});
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src=""js/man.js"></script>
+</head>
+
+<body onload="$('#myCarousel').carousel()">
+	<div class="wrap" style="margin-top: 30px;">
+		<div class="header">
+			<div style="float:left;width:150px;">
+				<img src="images/logo.png"/>
+			</div>		
+			<div style="float:right; font-size:20px;margin-top:20px;">
+						<h3> Welcome </h3>
+						
+						<div class="dropdown">
+    					<button class="btn btn-info" type="button" data-toggle="dropdown">Login
+    					<span class="caret"></span></button>
+    					<ul class="dropdown-menu">
+      					<li><a href="LoginSahayak.html">Sahayak</a></li>
+      					<li><a href="LoginUser.html">User</a></li>
+    					</ul>
+  						<a href="#" class="btn btn-info">Logout</a>
+						</div>
+			</div>
+			<div id="heading">
+				<a href="#">Sahayak</a>
+			</div>
+		</div>
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container" >
+				<a class="brand" href="Sahayak.html" >HOME</a>
+				<a class="brand" href="reservation.html">BOOK COOLIE</a>
+				<a class="brand" href="display.html">TRANSACTIONS</a>
+				<a class="brand" href="contact.html">CONTACT</a>
+				</div>
+			</div>
+		</div>
+				<div class="span12 well">
+			<div align="center" style="border-bottom: 3px solid #ddd;">
+				<h2>Booking Detail </h2>
+			</div>
+			<br>
+			<div >
+					<table class="table table-striped">
+					<tr>
+						<th style="border-top:0px;">Date</th>
+						<th style="border-top:0px;">Coolie Id</th>
+						<th style="border-top:0px;">Coolie Name</th>
+						<th style="border-top:0px;">Station Code</th>
+						<th style="border-top:0px;">From/To</th>
+						<th style="border-top:0px;">Amount(Rs)</th>
+						<th style="border-top:0px;">Status</th>
+					</tr>	
+					<tr>
+    					<td >08-Oct-2018</td>
+    					<td >1001</td>
+    					<td >Shubham</td>
+    					<td >umb</td>
+    					<td >PF# 2/PF# 7</td>
+    					<td >120</td>
+    					<td >Completed</td>
+    				</tr>
+					<tr>
+    					<td >18-Oct-2018</td>
+    					<td >1003</td>
+    					<td >Vishal</td>
+    					<td >umb</td>
+    					<td >PF# 1/PF# 6</td>
+    					<td >120</td>
+    					<td >Cancelled</td>
+    				</tr>
+					<tr>
+    					<td >31-Oct-2018</td>
+    					<td >1005</td>
+    					<td >Rishabh</td>
+    					<td >umb</td>
+    					<td >Taxi Stand/PF# 7</td>
+    					<td >120</td>
+    					<td >Completed</td>
+    				</tr>
+						<tr>
+							<td style="border-top:0px; text-align: center"><label class="text-error">   </label></td>
+							<td style="border-top:0px; text-align: center"><label class="text-error"><a href="#">    </a></label></td>
+							<td style="border-top:0px; text-align: center"><label class="text-error">    </label></td>
+							<td style="border-top:0px; text-align: center"><label class="text-error">    </label></td>
+					</tr>
+					</table>
+					</div>
+					<div >
+						<button onClick="window.print()">Print </button>
+					</div>
+	
+		</div>
+		</html>
